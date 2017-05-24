@@ -31,9 +31,9 @@
                 <configuration>
                     <includes>
                         <include>com.britebill.interview.transformers.TransformerDataTest</include>
-                    </includes>
-                    <includes>
-                        <include>com.britebill.interview.statistics.StatisticsTest</include>
+                        <includes>
+                            <include>com.britebill.interview.statistics.StatisticsTest</include>
+                        </includes>
                     </includes>
                 </configuration>
             </plugin>
