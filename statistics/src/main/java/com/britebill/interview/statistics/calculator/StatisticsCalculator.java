@@ -1,11 +1,11 @@
 package com.britebill.interview.statistics.calculator;
 
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
+import java.util.stream.Collectors;
 
 
 public class StatisticsCalculator {
+    private int count = 0;
 
     public Long getTotalNumberOfWords(List<String> data) {
         return (long)data.size();
@@ -13,19 +13,27 @@ public class StatisticsCalculator {
 
     public Long getTotalNumberOfUniqueWords(List<String> data) {
         Set<String> uniqueWords = new LinkedHashSet<>();
-        data.stream().forEach(s-> uniqueWords.add(s));
+        data.stream().forEach(s -> uniqueWords.add(s));
         return (long) uniqueWords.size();
     }
 
-    public Long getAverageCharactersPerWord(List<String> data) {
 
-        data.stream().forEach(s->s.length());
-        return null;
+    public Long getAverageCharactersPerWord(List<String> data) {
+        data.forEach(s-> count+= s.length());
+        return (long)count/data.size();
     }
 
     public String getMostRepeatedWord(List<String> data) {
-        // TODO Add the implementation to get the most repeated word here
-        return null;
+        Map<String, Long> occurrences = data.stream().collect(Collectors.groupingBy(w -> w, Collectors.counting()));
+        long max = -1;
+        String mostRepeated = "";
+        for(Map.Entry<String,Long> entry : occurrences.entrySet()){
+            if(entry.getValue() > max ){
+                mostRepeated = entry.getKey();
+                max = entry.getValue();
+            }
+        }
+        return mostRepeated;
     }
 
 }

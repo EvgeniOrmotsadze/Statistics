@@ -7,6 +7,13 @@
 
     <bean id="fileDataReader" class="com.britebill.interview.main.FileDataReader" scope="prototype">
     </bean>
+    <bean id="xmlTextStatistics" class="com.britebill.interview.statistics.writers.XmlStatisticsWriter" scope="prototype">
+    </bean>
+    <bean id="jsonTextStatistics" class="com.britebill.interview.statistics.writers.JsonStatisticsWriter" scope="prototype">
+    </bean>
+    <bean id="transformerData" class="com.britebill.interview.transformers.TransformerData" scope="prototype">
+    </bean>
+
 
 
 </beans>

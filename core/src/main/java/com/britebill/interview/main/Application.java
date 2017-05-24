@@ -16,9 +16,7 @@ public class Application {
         ApplicationContext context = new ClassPathXmlApplicationContext("context/context.xml");
         // Read file
         FileDataReader fileDataReader = context.getBean("fileDataReader",FileDataReader.class);
-
         List<String> data = fileDataReader.readData();
-  //      System.out.println(data);
 
         // Calculate statistics
         // Tip: Use statistics.xsd to generate a Statistic bean
