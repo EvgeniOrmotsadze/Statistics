@@ -1,0 +1,36 @@
+Technical test instructions
+===========================
+
+1. Fix compilation.
+-------------------
+We have detected that the project is not compiling anymore.
+    * Check what is broken, fix it and continue development.
+
+To run this application, you need to execute main method from Application class.
+
+2. Calculate statistics and write the output.
+---------------------------------------------
+We need to calculate the statistics about the data inside the file data.example. These statistics will
+be stored in XML and JSON formats.
+
+The statistics that you have to calculate are:
+    * Total Number Of Words
+    * Total Number Of Unique Words
+    * Average Characters Per Word
+    * Most Repeated Word
+
+You can calculate all this data in class StatisticsCalculator.
+
+Use the classes that implements StatisticsWriter to store this data in XML and JSON formats.
+There is a XSD file with the XML scheme (statistics.xsd) to help you with the XML conversion,
+you can use it to make a Statistic bean to store all the statistics. 
+It would be good if you can complete the unit tests at StatisticsTest.
+
+3. Transform data.
+------------------
+We need that you develop the following tasks inside TransformersData class of transformers module:
+    * Convert everything to uppercase.
+    * Remove all repeated entries.
+    * Sort it by length: first, words of one letter, second: words of two letters, etc.
+
+Be sure everything works as expected by adding some unit tests in TransformersDataTest.
