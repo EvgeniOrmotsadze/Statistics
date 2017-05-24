@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Statistics>
+    <TotalNumberOfWords>30</TotalNumberOfWords>
+    <TotalNumberOfUniqueWords>20</TotalNumberOfUniqueWords>
+    <AverageCharactersPerWord>5</AverageCharactersPerWord>
+    <MostRepeatedWord>game</MostRepeatedWord>
+</Statistics>

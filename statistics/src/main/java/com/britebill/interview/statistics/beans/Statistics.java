@@ -132,4 +132,13 @@ public class Statistics {
         this.mostRepeatedWord = value;
     }
 
+    @Override
+    public String toString() {
+        return "Statistics{" +
+                "totalNumberOfWords=" + totalNumberOfWords +
+                ", totalNumberOfUniqueWords=" + totalNumberOfUniqueWords +
+                ", averageCharactersPerWord=" + averageCharactersPerWord +
+                ", mostRepeatedWord='" + mostRepeatedWord + '\'' +
+                '}';
+    }
 }

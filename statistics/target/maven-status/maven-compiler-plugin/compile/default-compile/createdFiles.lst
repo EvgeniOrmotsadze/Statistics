@@ -1,7 +1,0 @@
-com\britebill\interview\statistics\beans\Statistics.class
-generated\Statistics.class
-com\britebill\interview\statistics\writers\StatisticsWriter.class
-generated\ObjectFactory.class
-com\britebill\interview\statistics\writers\JsonStatisticsWriter.class
-com\britebill\interview\statistics\calculator\StatisticsCalculator.class
-com\britebill\interview\statistics\writers\XmlStatisticsWriter.class
